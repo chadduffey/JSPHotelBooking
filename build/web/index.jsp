@@ -14,7 +14,7 @@
         <script language="JavaScript" src="js/htmlDatePicker.js" type="text/javascript"></script>
         <link href="css/normalize.css" rel="stylesheet" />
         <link href="css/htmlDatePicker.css" rel="stylesheet" />
-        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300|Amatic+SC|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <link href="css/main.css" rel="stylesheet" />
     </head>
     <body>
