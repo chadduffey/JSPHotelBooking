@@ -21,6 +21,8 @@
         
         <form action="booking" method="post">
             <input type="hidden" name="action" value="book">
+            <input type="hidden" name="datetime" value="<%= new java.util.Date() %>">
+            
             <h1>Make a Reservation</h1>
 
             <p><i>${message}</i></p>
@@ -28,30 +30,29 @@
             <fieldset>
                 <legend><span class="number">1</span>Booking detail</legend>
 
+                <!-- Test code --> 
+                <!-- <%= new java.util.Date() %> -->
+                
                 <label for="checkin">Arrival Date</label>
-                <input type="text" name="checkin" id="checkin" readonly onClick="GetDate(this);" />
+                <input type="text" name="checkin" id="checkin" value="${checkin}" readonly onClick="GetDate(this);" />
 
                 <label for="checkout">Departure date</label>
-                <input type="text" name="checkout" id="checkout" readonly onClick="GetDate(this);" />
+                <input type="text" name="checkout" id="checkout" value="${checkout}" readonly onClick="GetDate(this);" />
 
                 <label for="room">Room Type:</label>
                 <select id="room" name="room_type">
                     <optgroup label="Standard Rooms">
-                        <option value="standard_king">Standard King Room - $300 per night</option>
-                        <option value="standard_queen">Standard Queen Room - $200 per night</option>
+                        <option value="Standard-King">Standard King Room | $300 per night</option>
+                        <option value="Standard-Queen">Standard Queen Room | $200 per night</option>
                     </optgroup>
                     <optgroup label="Luxury Rooms">
-                        <option value="luxury_king">Luxury King Room - $700 per night</option>
-                        <option value="luxury_queen">Luxury Queen Room - $600 per night</option>
-                    </optgroup>
-                    <optgroup label="Extravagent Rooms">
-                        <option value="mega_king">Mega King Room - $900 per night</option>
-                        <option value="standard_king">King Room - $800 per night</option>
+                        <option value="Luxury-King">Luxury King Room | $700 per night</option>
+                        <option value="Luxury-Queen">Luxury Queen Room | $600 per night</option>
                     </optgroup>
                 </select>
 
                  <label>Smoking</label>
-                <input type="radio" id="non_smoking" value="non_smoking" name="smokingchoice"><label for="non_smoking" class="light">Non-Smoking Room</label><br/>
+                <input type="radio" id="non_smoking" value="non_smoking" name="smokingchoice" checked><label for="non_smoking" class="light">Non-Smoking Room</label><br/>
                 <input type="radio" id="snoking" value="smoking" name="smokingchoice"><label for="smoking" class="light">Smoking Room</label>
 
             </fieldset>
@@ -69,28 +70,29 @@
                 <input type="email" name="email" id="email" value="${email}"><br/>
 
                 <label for="phone">Contact Phone:</label>
-                <input type="tel" name="phone" id="phone" value="${email}"><br/>
+                <label class="example">Examples: 02-63410000, 0418400000</label>
+                <input type="tel" name="phone" id="phone" value="${phone}"><br/>
             </fieldset>
 
             <fieldset>
                 <legend><span class="number">3</span>Forwarding Information</legend>
 
                 <label for="address1">Address:</label>
-                <input type="text" name="address1" id="address1" value="${firstname}"><br/>
+                <input type="text" name="address1" id="address1" value="${address1}"><br/>
 
                 <label for="address2">Address (optional):</label>
-                <input type="text" name="address2" id="address2" value="${firstname}"><br/>
+                <input type="text" name="address2" id="address2" value="${address2}"><br/>
 
                 <label for="state">State:</label>
                 <select id="state" name="state">
-                    <option value="nsw">NSW</option>
-                    <option value="act">ACT</option>
-                    <option value="vic">VIC</option>
-                    <option value="sa">SA</option>
-                    <option value="wa">WA</option>
-                    <option value="nt">NT</option>
-                    <option value="qld">QLD</option>
-                    <option value="tas">TAS</option>
+                    <option value="NSW">NSW</option>
+                    <option value="ACT">ACT</option>
+                    <option value="VIC">VIC</option>
+                    <option value="SA">SA</option>
+                    <option value="WA">WA</option>
+                    <option value="NT">NT</option>
+                    <option value="QLD">QLD</option>
+                    <option value="TAS">TAS</option>
                     <option value="outsideAU">Outside Australia</option>
                 </select>
 

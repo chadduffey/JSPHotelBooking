@@ -102,6 +102,11 @@ label.light {
   display: inline;
 }
 
+label.example {
+    font-size: 0.6em;
+    font-style: italic;
+}
+
 .number {
   background-color: #5fcf80;
   color: #fff;

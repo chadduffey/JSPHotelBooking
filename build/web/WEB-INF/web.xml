@@ -4,9 +4,17 @@
         <servlet-name>booking</servlet-name>
         <servlet-class>booking</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>dates</servlet-name>
+        <servlet-class>dates</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>booking</servlet-name>
         <url-pattern>/booking</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>dates</servlet-name>
+        <url-pattern>/dates</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
