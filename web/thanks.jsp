@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="css/normalize.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-        <link href="css/main.css" rel="stylesheet" />
+        <link href="css/confirm.css" rel="stylesheet" />
         <title>Confirmation</title>
     </head>
     <body>
