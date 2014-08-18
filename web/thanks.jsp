@@ -25,7 +25,7 @@
             <div class="box">
                 
                 <div class="content">
-                    <p class="centered">Booking created: ${datetime}</p>
+                    <p class="centered"><i>Booking created: ${datetime}</i></p>
                     
                     <p>Check-in date:   ${checkin}</p>
                     <input type="hidden" name="checkin" value="${checkin}">
@@ -36,7 +36,7 @@
                     <p>Room type:       ${room_type}</p>
                     <input type="hidden" name="room_type" value="${room_type}">
                     
-                    <p>Smoking:         ${smoking_choice}</p>
+                    <p>Room Options:    ${smoking_choice}</p>
                     <input type="hidden" name="smoking_choice" value="${smoking_choice}">
                     
                     <p>Your Name:       ${firstname} ${surname} <p>

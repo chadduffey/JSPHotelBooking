@@ -89,7 +89,7 @@ public class booking extends HttpServlet {
             String checkin = request.getParameter("checkin");
             String checkout = request.getParameter("checkout");
             String room_type = request.getParameter("room_type");
-            String smokingchoice = request.getParameter("smokingchoice");
+            String smoking_choice = request.getParameter("smoking_choice");
             String firstname = request.getParameter("firstname");
             String surname = request.getParameter("surname");
             String email = request.getParameter("email");
@@ -108,7 +108,7 @@ public class booking extends HttpServlet {
             request.setAttribute("checkin", checkin);
             request.setAttribute("checkout", checkout);
             request.setAttribute("room_type", room_type);
-            request.setAttribute("smokingchoice", smokingchoice);
+            request.setAttribute("smoking_choice", smoking_choice);
             request.setAttribute("firstname", firstname);
             request.setAttribute("surname", surname);
             request.setAttribute("email", email);
@@ -128,7 +128,7 @@ public class booking extends HttpServlet {
             String checkin = request.getParameter("checkin");
             String checkout = request.getParameter("checkout");
             String room_type = request.getParameter("room_type");
-            String smokingchoice = request.getParameter("smokingchoice");
+            String smoking_choice = request.getParameter("smoking_choice");
             String firstname = request.getParameter("firstname");
             String surname = request.getParameter("surname");
             String email = request.getParameter("email");
@@ -254,7 +254,7 @@ public class booking extends HttpServlet {
             request.setAttribute("checkin", checkin);
             request.setAttribute("checkout", checkout);
             request.setAttribute("room_type", room_type);
-            request.setAttribute("smokingchoice", smokingchoice);
+            request.setAttribute("smoking_choice", smoking_choice);
             request.setAttribute("firstname", firstname);
             request.setAttribute("surname", surname);
             request.setAttribute("email", email);

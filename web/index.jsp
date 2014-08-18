@@ -56,8 +56,10 @@
                 </select>
 
                 <label>Smoking</label>
-                <input type="radio" id="non_smoking" value="non_smoking" name="smokingchoice" checked><label for="non_smoking" class="light">Non-Smoking Room</label><br/>
-                <input type="radio" id="smoking" value="smoking" name="smokingchoice"><label for="smoking" class="light">Smoking Room</label>
+                <input type="radio" id="non_smoking" value="non-smoking" name="smoking_choice" checked>
+                <label for="non_smoking" class="light">Non-Smoking Room</label><br/>
+                <input type="radio" id="smoking" value="smoking" name="smoking_choice">
+                <label for="smoking" class="light">Smoking Room</label>
 
             </fieldset>
 
