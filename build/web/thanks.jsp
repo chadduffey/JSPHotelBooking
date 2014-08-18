@@ -1,3 +1,9 @@
+<%-- 
+    Document   : thanks.jsp
+    Created on : Aug 11, 2014, 8:15:18 PM
+    Author     : Chad Duffey | Student 11372834
+--%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,7 +18,10 @@
      
         <form action="booking" method="post">
             <input type="hidden" name="action" value="edit">
-            <h1>Thanks for your booking</h1>
+            <h1>Thanks for your booking<br/>
+                <img src="img/plane.png" alt="plane">
+            </h1>
+            
             <div class="box">
                 
                 <div class="content">

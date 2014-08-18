@@ -46,8 +46,8 @@ var HighlightToday	= true;		// use true or false to have the current day highlig
 var DisablePast		= true;		// use true or false to allow past dates to be selectable
 // The month names in your native language can be substituted below
 var MonthNames = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
-var DisableNoDateButton = false;	// use true or false to allow the user to select "No Date"
-var dateFormat = "n/j/Y";	/*	dateFormat Rules:	(subset of PHP rules)
+var DisableNoDateButton = true;	// use true or false to allow the user to select "No Date"
+var dateFormat = "d/m/Y";	/*	dateFormat Rules:	(subset of PHP rules)
 									Day:
 										d = Day of the month, 2 digits with leading zeros (01-31)
 										j = Day of the month without leading zeros (1-31)
@@ -63,7 +63,7 @@ var dateFormat = "n/j/Y";	/*	dateFormat Rules:	(subset of PHP rules)
 var range_start = null; // Date Ranges are highlighted in a light purple colour
 var range_end = null;	// both must be present (not null) in order to work, even for single dates
 var fireOnChange = false;	// true || false :: true = the onchange event of the target control will fire when a new date is chosen
-var restrictFuture = "";	// can be a single integer (ie 14) to restrict the choosing of a date to X days in the future
+var restrictFuture = "365";	// can be a single integer (ie 14) to restrict the choosing of a date to X days in the future
 							// can also be a future date (in same format of dateFormat) to restrict the choosing of a date from Now to given future date
 
 // Global Vars

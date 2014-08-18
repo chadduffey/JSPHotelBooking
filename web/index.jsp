@@ -1,11 +1,12 @@
 <%-- 
-    Document   : index
+    Document   : index.jsp
     Created on : Aug 11, 2014, 8:15:18 PM
-    Author     : chadd_000
+    Author     : Chad Duffey | Student 11372834
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
+<%@ page import="java.io.*,java.util.*" %>
+<%@ page import="javax.servlet.*,java.text.*" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,14 +26,17 @@
             
             <h1>Make a Reservation</h1>
 
+            <% 
+                Date dNow = new Date( );
+                SimpleDateFormat ft = new SimpleDateFormat ("dd/MM/yyyy");
+            %>
+            <input type="hidden" name="fdate" value="<%= ft.format(dNow) %>">
+
             <p><i>${message}</i></p>
             
             <fieldset>
                 <legend><span class="number">1</span>Booking detail</legend>
 
-                <!-- Test code --> 
-                <!-- <%= new java.util.Date() %> -->
-                
                 <label for="checkin">Arrival Date</label>
                 <input type="text" name="checkin" id="checkin" value="${checkin}" readonly onClick="GetDate(this);" />
 
@@ -51,9 +55,9 @@
                     </optgroup>
                 </select>
 
-                 <label>Smoking</label>
+                <label>Smoking</label>
                 <input type="radio" id="non_smoking" value="non_smoking" name="smokingchoice" checked><label for="non_smoking" class="light">Non-Smoking Room</label><br/>
-                <input type="radio" id="snoking" value="smoking" name="smokingchoice"><label for="smoking" class="light">Smoking Room</label>
+                <input type="radio" id="smoking" value="smoking" name="smokingchoice"><label for="smoking" class="light">Smoking Room</label>
 
             </fieldset>
 
@@ -342,10 +346,8 @@
                 </select>
 
             </fieldset> 
-
             <br/></br>
 
-            
             <button type="submit">Book it!</button>
         </form>
     </body>

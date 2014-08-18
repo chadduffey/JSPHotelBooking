@@ -9,17 +9,17 @@
 	position: absolute;				/* Important, do not change */
 	background-color: #eeeeee;
 	color: black;
-	font-size: xx-small;
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	width: 150px;
+	font-size: small;
+	font-family: 'Open Sans Condensed', Verdana, Geneva, Arial, Helvetica, sans-serif;
+	width: 180px;
 }
 /* The table of the Calendar */
 #dpCalendar table {
 	border: 1px solid black;
 	background-color: #eeeeee;
 	color: black;
-	font-size: xx-small;
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-family: 'Open Sans Condensed', Verdana, Geneva, Arial, Helvetica, sans-serif;
 	width: 100%;
 }
 /* The Next/Previous buttons */
@@ -29,6 +29,7 @@
 }
 /* The Month/Year title cell */
 #dpCalendar .cellMonth {
+        font-size: medium;
 	background-color: #ddddff;
 	color: black;
 	text-align: center;
