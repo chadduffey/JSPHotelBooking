@@ -46,12 +46,12 @@
                 <label for="room">Room Type:</label>
                 <select id="room" name="room_type">
                     <optgroup label="Standard Rooms">
-                        <option value="Standard-King">Standard King Room | $300 per night</option>
-                        <option value="Standard-Queen">Standard Queen Room | $200 per night</option>
+                        <option value="Standard-King">Standard King Room </option>
+                        <option value="Standard-Queen">Standard Queen Room </option>
                     </optgroup>
                     <optgroup label="Luxury Rooms">
-                        <option value="Luxury-King">Luxury King Room | $700 per night</option>
-                        <option value="Luxury-Queen">Luxury Queen Room | $600 per night</option>
+                        <option value="Luxury-King">Luxury King Room </option>
+                        <option value="Luxury-Queen">Luxury Queen Room </option>
                     </optgroup>
                 </select>
 
